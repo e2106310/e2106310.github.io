@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Shohei">
+    <meta name="keywords" content="html, css, javascript">
+    <title>国紹介(オーストラリア)</title>
+
+    <link rel="stylesheet" href="../css/b.css">
+
+
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <h1>
+                オーストラリアを紹介します！
+            </h1>
+            <nav class="gnav">
+                <ul>
+                    <li>
+                        <a href="../index.html">フィリピン</a>
+                    </li>
+                    <li>
+                        <a href="../html/c.html">中国</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <aside>
+            <h2>目次</h2>
+            <nav>
+                <ol>
+                    <li>
+                        <a href="#topic1">オーストラリア</a>
+                    </li>
+                    <li>
+                        <a href="#topic2">オーストラリアの観光地</a>
+                    </li>
+                    <li>
+                        <a href="#topic3">オーストラリアの食文化</a>
+                    </li>
+                    <li>
+                        <a href="#topic4">まとめ</a>
+                    </li>
+                </ol>
+            </nav>
+            <section class="form-section">
+                <h2>申込フォーム</h2>
+
+                <form action="index.html" method="post">
+
+                    <div>
+                        <label for="lastname">姓：</label>
+                        <input type="text" id="lastname" name="surname" value="山田" placeholder="山田">
+
+                        <label>
+                            名：
+                            <input type="text" id="firstname" name="firstname" value="山田" required>
+                        </label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="female" name="gender" value="female" checked>
+                        <label for="female">女性</label>
+
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">男性</label>
+
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">その他</label>
+                    </div>
+
+                    <div>
+                        <label for="birthday">誕生日：</label>
+                        <input type="date" name="birthday" id="birthday">
+                    </div>
+
+                    <div>
+                        <label for="tel">電話番号：</label>
+                        <input type="tel" id="tel" name="tel">
+                    </div>
+
+                    <div>
+                        <label for="email">メールアドレス：</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+
+                    <div>
+                        <label for="password">パスワード：</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+
+                    <div>
+                        <label for="remakes">お問い合わせ内容：</label>
+                        <textarea name="remakes" id="remakes" cols="20" rows="5" accesskey="r" tabindex="6">ご質問やご要望を入力してください。</textarea>
+                    </div>
+
+                    <div>
+                        <label for="file">アップロードファイル：</label>
+                        <input type="file" id="file" name="file">
+                    </div>
+
+                    <div>
+                        <label for="agreement">プライバシーポリシーに同意する</label>
+                        <input type="checkbox" id="agreement" name="agreement" value="true">
+                    </div>
+
+                    <div>
+                        <input type="submit">
+                        <input type="reset">
+                    </div>
+                </form>
+            </section>
+
+            <section>
+                <h2>自己紹介</h2>
+                <div>
+                    <section>
+                        <h3>アッシー</h3>
+                        <div>
+                            <p id="test-p-1">大阪出身</p>
+                            <p class="test-p-2">八王子在住</p>
+                            <p id="test-p-3">旅好き</p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h3>メソッド</h3>
+                         <div>
+                            <button type="button" onclick="toggle()">表示・非表示</button>
+                            <button type="button" onclick="slide()">スライド</button>
+                            <button type="button" onclick="fade()">フェード</button>
+                            <button type="button" onclick="color()">CSS操作</button>
+                            <button type="button" onclick="costomAnimate()">カスタムアニメーション</button>
+                         </div>
+                    </section>
+
+                    <section>
+                        <h3>イベントハンドラ</h3>
+                        <div>
+                           <form action="">
+                            <input id="input-1" type="text">
+                           </form>
+                        </div>
+                    </section>
+                    
+                </div>
+            </section>
+
+            <section>
+                <h2>私のおすすめ地域</h2>
+
+                <section>
+                    <h3>棒グラフ</h3>
+                    <canvas id="myChart1"></canvas>
+                </section>
+
+                <section>
+                    <h3>ドーナツグラフ</h3>
+                    <canvas id="myChart2"></canvas>
+                </section>
+            
+            </section>
+
+        </aside>
+
+        <main>
+            <section>
+                <h2 id="topic1">①オーストラリア</h2>
+                <div>
+                    <h3>オーストラリアとは</h3>
+
+                    <div class="image-row-wrapper">
+                        <div class="image-row">
+                            <img src="../img/b.img/b-img/スクリーンショット 2025-07-25 午後3.48.07.png" alt="オーストラリアの風景" width="400" height="300">
+                            <img src="../img/b.img/b-img/スクリーンショット 2025-07-25 午後3.48.14.png" alt="オーストラリアの風景" width="400" height="300">
+                            <img src="../img/b.img/b-img/スクリーンショット 2025-07-25 午後3.48.20.png" alt="オーストラリアの風景" width="400" height="300">
+                        </div>
+                    </div>
+
+                    <p>オーストラリア連邦（オーストラリアれんぽう、英: Commonwealth of Australia）、通称オーストラリア（英: Australia）
+                        は、オセアニアに位置し、オーストラリア大陸本土、タスマニア島及び多数の小島から成る連邦立憲君主制国家。首都はキャンベラ。近隣諸国としては、北にパプアニューギニア・インドネシア・東ティモール、北東にソロモン諸島・バヌアツ、東はトンガ・ニューカレドニア・フィジー、南東2000キロメートル先にニュージーランドがある。
+                    </p>
+
+                    <p>
+                        <a href="https://ja.wikipedia.org/wiki/%E3%82%AA%E3%83%BC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%AA%E3%82%A2"
+                            target="_self">詳しく知りたい方はこちらをクリック（wikipedia）</a>
+                    </p>
+                </div>
+
+                <div>
+                    <h3>オーストラリアの基本情報</h3>
+                    <table>
+                        <caption></caption>
+                        <tbody>
+                            <tr>
+                                <th>人口</th>
+                                <td colspan="3">25,500,000人（2020年時点）</td>
+                            </tr>
+                            <tr>
+                                <th>国土面積</th>
+                                <td colspan="3">7,692,024km2</td>
+                            </tr>
+                            <tr>
+                                <th>言語</th>
+                                <td colspan="3">英語</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div>
+                    <h3>主な都市</h3>
+                    <dl>
+                        <dt>シドニー</dt>
+                        <dd>シドニーはオーストラリア最大の都市で、美しいビーチや自然と都市が融合した魅力的な場所です。象徴的なオペラハウスやハーバーブリッジが有名で、観光客に人気です。多文化が共存し、食や芸術も多彩。温暖な気候も魅力の一つです。
+                        </dd>
+                        <dt>メルボルン</dt>
+                        <dd>メルボルンはオーストラリア南東部に位置する文化と芸術の街で、カフェ文化やストリートアートが有名です。年間を通して多くのイベントが開催され、スポーツも盛んです。歴史的な建築と近代的な建物が調和し、住みやすさでも評価の高い都市です。
+                        </dd>
+                        <dt>ブリスベン</dt>
+                        <dd>ブリスベンはオーストラリア北東部に位置する温暖な気候の都市で、自然と都市生活が調和しています。ブリスベン川沿いに発展し、美しい公園や川沿いの散策路が人気です。落ち着いた雰囲気で、留学や移住先としても人気があります。
+                        </dd>
+                    </dl>
+                </div>
+
+            </section>
+
+            <section>
+                <h2 id="topic2">②オーストラリアの観光地</h2>
+
+                <dl>
+                    <dt>オペラハウス</dt>
+                    <dd>オペラハウスはシドニーを代表する世界的な建築物で、白い帆のような独特のデザインが特徴です。1973年に開館し、音楽や演劇、バレエなど多くの公演が行われています。世界遺産にも登録されており、観光スポットとしても人気があります。
+                    </dd>
+                    <dt>ゴールドコースト</dt>
+                    <dd>ゴールドコーストはオーストラリア東海岸にあるリゾート都市で、美しいビーチとサーフィンの名所として有名です。高層ビルが立ち並ぶサーファーズパラダイスを中心に、テーマパークや自然公園も豊富で、観光にも生活にも人気があります。
+                    </dd>
+                    <dt>グレートバリアリーフ</dt>
+                    <dd>グレートバリアリーフはオーストラリア北東沿岸に広がる世界最大のサンゴ礁群で、世界遺産にも登録されています。色とりどりの魚やサンゴが生息し、ダイビングやシュノーケリングの名所として有名です。自然の宝庫として多くの人々を魅了しています。
+                    </dd>
+                </dl>
+
+                <div class="image-row-wrapper">
+                    <div class="image-row">
+                        <img src="../img/b.img/b-img/スクリーンショット 2025-07-25 午後3.48.30.png" alt="オーストラリアの風景" width="400" height="300">
+                        <img src="../img/b.img/b-img/スクリーンショット 2025-07-25 午後3.48.38.png" alt="オーストラリアの風景" width="400" height="300">
+                        <img src="../img/b.img/b-img/スクリーンショット 2025-07-25 午後3.48.47.png" alt="オーストラリアの風景" width="400" height="300">
+                    </div>
+                </div>
+
+            </section>
+
+            <section>
+                <h2 id="topic3">③オーストラリア食文化</h2>
+
+                <dl>
+                    <dt>カンガルー肉</dt>
+                    <dd>オーストラリアで広く食べられている食材の一つで、高たんぱく・低脂肪・低カロリーなのが特徴です。クセが少なく、ステーキやソーセージ、ハンバーガーなどにして楽しまれます。持続可能な食材としても注目されています。
+                    </dd>
+                    <dt>ブッシュタッカー</dt>
+                    <dd>アボリジニの伝統的な食文化に由来する食材群で、ワットルシード（マメ科植物の種）やマカダミアナッツ、昆虫（ウィッチェティ・グラブ）などがあります。</dd>
+                </dl>
+
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Wd0bahBgSm4?si=MKlZuJDdxDDbmuHx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </section>
+
+            <section>
+                <h2 id="topic4">④まとめ</h2>
+
+                <p>
+                    オーストラリアは南半球に位置する広大な島国で、豊かな自然と多文化が共存する国です。シドニーやメルボルン、ブリスベン、ゴールドコーストなどの都市はそれぞれ異なる魅力を持ち、観光・留学・移住先として人気です。世界遺産のグレートバリアリーフやウルル（エアーズロック）など、壮大な自然も見どころです。カンガルーやコアラなどの動物、カンガルー肉やエミュー肉などのユニークな食文化も特徴です。教育水準が高く、治安も良好で、多様性と自然が調和した住みやすい国です。さて次は中国を紹介します。
+                </p>
+
+                <a href="../html/c.html">中国を紹介します！</a>
+            </section>
+
+
+        </main>
+
+        <footer>
+            Copyright &copy; Shohei, All Rights Reserved.
+        </footer>
+    </div>
+</body>
+
+ <!-- 外部のライブラリーは先に読み込む必要がある-->
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+ <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.min.js"></script>
+
+ <!-- 外部のJavaScriptを読み込む場合 -->
+ <script src="../js/b.query.js"></script>
+ <script src="../js/b.chart.js"></script>
+
+</html>
+
+<!-- コメント -->
+<!-- コメント -->
+<!-- シフトキー＋タブで揃える -->
+<!-- シフト＋オプション＋ｆで整える -->
+<!-- コマンド＋ｚで戻す -->
+<!-- コマンド＋シフト＋ｚで先へ進める -->
+<!-- コマンド＋スラッシュでコメント -->
+<!-- コマンド＋Sで保存 -->
+<!-- シフト＋オプション＋したで複製 -->

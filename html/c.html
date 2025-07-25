@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Shohei">
+    <meta name="keywords" content="html, css, javascript">
+    <title>国紹介(中国)</title>
+    <!-- <style>
+        table, tr, th, td {
+            border: solid; 
+        }
+    </style> -->
+
+    <link rel="stylesheet" href="../css/c.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>
+                中国を紹介します！
+            </h1>
+            <nav class="gnav">
+                <ul>
+                    <li>
+                        <a href="../index.html">フィリピン</a>
+                    </li>
+                    <li>
+                        <a href="../html/b.html">オーストラリア</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    
+        <aside>
+            <nav>
+                <h2>目次</h2>
+                <ol>
+                    <li>
+                        <a href="#topic1">中国</a>
+                    </li>
+                    <li>
+                        <a href="#topic2">中国の観光地</a>
+                    </li>
+                    <li>
+                        <a href="#topic3">中国の食文化</a>
+                    </li>
+                    <li>
+                        <a href="#topic4">まとめ</a>
+                    </li>
+                </ol>
+            </nav>
+            <section class="form-section">
+                <h2>申込フォーム</h2>
+    
+                <form action="index.html" method="post">
+    
+                    <div>
+                        <label for="lastname">姓：</label>
+                        <input type="text" id="lastname" name="surname" placeholder="山田" value="山田">
+    
+                        <label>
+                            名：
+                            <input type="text" id="firstname" name="firstname" value="" required>
+                        </label>
+                    </div>
+    
+                    <div>
+                        <input type="radio" id="female" name="gender" value="female" checked>
+                        <label for="female">女性</label>
+    
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">男性</label>
+    
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">その他</label>
+                    </div>
+    
+                    <div>
+                        <label for="birthday">誕生日：</label>
+                        <input type="date" name="birthday" id="birthday">
+                    </div>
+    
+                    <div>
+                        <label for="tel">電話番号：</label>
+                        <input type="tel" id="tel" name="tel">
+                    </div>
+    
+                    <div>
+                        <label for="email">メールアドレス：</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+    
+                    <div>
+                        <label for="password">パスワード：</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+    
+                    <div>
+                        <label for="remakes">お問い合わせ内容：</label>
+                        <textarea name="remakes" id="remakes" cols="20" rows="5" accesskey="r" tabindex="6">ご質問やご要望を入力してください。</textarea>
+                    </div>
+    
+                    <div>
+                        <label for="file">アップロードファイル：</label>
+                        <input type="file" id="file" name="file">
+                    </div>
+    
+                    <div>
+                        <label for="agreement">プライバシーポリシーに同意する</label>
+                        <input type="checkbox" id="agreement" name="agreement" value="true">
+                    </div>
+    
+                    <div>
+                        <input type="submit">
+                        <input type="reset">
+                    </div>
+                </form>
+            </section>
+
+            <section>
+                <h2>自己紹介</h2>
+                <div>
+                    <section>
+                        <h3>アッシー</h3>
+                        <div>
+                            <p id="test-p-1">大阪出身</p>
+                            <p class="test-p-2">八王子在住</p>
+                            <p id="test-p-3">旅好き</p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h3>メソッド</h3>
+                         <div>
+                            <button type="button" onclick="toggle()">表示・非表示</button>
+                            <button type="button" onclick="slide()">スライド</button>
+                            <button type="button" onclick="fade()">フェード</button>
+                            <button type="button" onclick="color()">CSS操作</button>
+                            <button type="button" onclick="costomAnimate()">カスタムアニメーション</button>
+                         </div>
+                    </section>
+
+                    <section>
+                        <h3>イベントハンドラ</h3>
+                        <div>
+                           <form action="">
+                            <input id="input-1" type="text">
+                           </form>
+                        </div>
+                    </section>
+                    
+                </div>
+            </section>
+
+            <section>
+                <h2>私のおすすめ地域</h2>
+
+                <section>
+                    <h3>棒グラフ</h3>
+                    <canvas id="myChart1"></canvas>
+                </section>
+
+                <section>
+                    <h3>ドーナツグラフ</h3>
+                    <canvas id="myChart2"></canvas>
+                </section>
+            
+            </section>
+
+        </aside>
+        
+    
+        <main>
+    
+    
+    
+            <section>
+                <h2 id="topic1">①中国</h2>
+                <div>
+                    <h3>中国とは</h3>
+    
+                    <div class="image-row-wrapper">
+                        <div class="image-row">
+                            <img src="../img/c.img/c-img/スクリーンショット 2025-07-25 午後3.50.11.png" alt="地球から見た中国の地図" width="400" height="300">
+                            <img src="../img/c.img/c-img/スクリーンショット 2025-07-25 午後3.50.16.png" alt="地球から見た中国の地図" width="400" height="300">
+                            <img src="../img/c.img/c-img/スクリーンショット 2025-07-25 午後3.50.24.png" alt="中国の地図" width="400" height="300">
+                        </div>
+                    </div>
+    
+                    <p>中華人民共和国（ちゅうかじんみんきょうわこく、簡体字: 中华人民共和国; 繁体字: 中華人民共和國; 拼音: Zhōnghuá Rénmín GònghéguóPronunciation
+                        of Zhonghuarenmingongheguo.ogg 聞く）、通称中国（ちゅうごく、拼音: Zhōngguó）は、東アジアに位置する社会主義共和制国家。首都は北京市。</p>
+                    <p>
+                        <a href="https://ja.wikipedia.org/wiki/%E4%B8%AD%E8%8F%AF%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD"
+                            target="_self">詳しく知りたい方はこちらをクリック（wikipedia）</a>
+                    </p>
+                </div>
+    
+                <div>
+                    <h3>中国の基本情報</h3>
+                    <table>
+                        <caption></caption>
+                        <tbody>
+                            <tr>
+                                <th>人口</th>
+                                <td colspan="3">14億828万人（2024年時点）</td>
+                            </tr>
+                            <tr>
+                                <th>国土面積</th>
+                                <td colspan="3">9,634,060-9,672,018km2</td>
+                            </tr>
+                            <tr>
+                                <th>言語</th>
+                                <td colspan="3">中国語</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+    
+                <div>
+                    <h3>主な都市</h3>
+                    <dl>
+                        <dt>北京</dt>
+                        <dd>中国の首都であり、政治・文化の中心地です。故宮や天安門広場、万里の長城など歴史的名所が多く、古代と現代が融合した街です。政府機関が集まり、教育・経済の面でも重要な役割を果たしています。地下鉄網が発達し、観光やビジネスに便利な都市です。
+                        </dd>
+                        <dt>上海</dt>
+                        <dd>中国最大の経済都市で、国際的な金融・商業の拠点です。外灘（バンド）や浦東の高層ビル群が象徴的で、近代的な都市風景が広がります。西洋と東洋の文化が交差し、外国企業も多数進出しています。交通や生活環境も整っており、国際色豊かな都市です。
+                        </dd>
+                        <dt>広州</dt>
+                        <dd>中国南部の経済都市で、貿易と製造業の中心地として知られています。広東料理の本場としても有名で、美食を楽しめる街です。香港やマカオにも近く、広州交易会など国際的な展示会も多く開催されます。温暖な気候と活気ある雰囲気が魅力です。
+                        </dd>
+                    </dl>
+                </div>
+    
+            </section>
+    
+            <section>
+                <h2 id="topic2">②中国の観光地</h2>
+    
+                <dl>
+                    <dt>万里の長城</dt>
+                    <dd>中国を代表する世界遺産で、古代中国の防衛施設として建設されました。全長は2万km以上にも及び、八達嶺や慕田峪などの区間は観光客にも人気です。壮大なスケールと歴史的価値から、訪れる人々に感動を与えます。
+                    </dd>
+                    <dt>上海タワー</dt>
+                    <dd>上海の観光名所で、外灘ではヨーロッパ風の歴史的建築と黄浦江を挟んで浦東の近未来的な高層ビル群を望めます。特に上海タワーや東方明珠タワーは人気スポットで、展望台からの夜景は圧巻です。都会的な魅力を味わえる場所です。
+                    </dd>
+                    <dt>兵馬俑</dt>
+                    <dd>秦の始皇帝の陵墓を守るために造られた等身大の兵士や馬の像で、1974年に発見されました。数千体の兵馬俑が並ぶ姿は壮観で、中国古代史のスケールを感じられます。西安はかつての長安で、多くの歴史遺産が残る都市です。
+                    </dd>
+                </dl>
+    
+                <div class="image-row-wrapper">
+                    <div class="image-row">
+                        <img src="../img/c.img/c-img/スクリーンショット 2025-07-25 午後3.50.42.png" alt="上海タワー" width="400" height="300">
+                        <img src="../img/c.img/c-img/スクリーンショット 2025-07-25 午後3.51.00.png" alt="万里の長城" width="400" height="300">
+                        <img src="../img/c.img/c-img/スクリーンショット 2025-07-25 午後3.51.11.png" alt="兵馬俑" width="400" height="300">
+                    </div>
+                </div>
+    
+            </section>
+    
+            <section>
+                <h2 id="topic3">③中国の食文化</h2>
+    
+                <dl>
+                    <dt>カエル（田鶏）</dt>
+                    <dd>中国ではカエル（田鶏）は一般的な食材で、特に広東や四川など南部で人気があります。鶏肉に似た淡白な味で、高タンパク・低脂肪とされ、炒め物や火鍋、薬膳スープなど様々な料理に使われます。四川風のピリ辛炒めが特に有名で、コラーゲンが豊富とされ女性にも人気です。見た目は驚く人もいますが、味は意外と食べやすく、観光客にも人気の珍味のひとつです。
+                    </dd>
+                    <dt>蛇肉（蛇／シャ）</dt>
+                    <dd>特に南方では蛇肉も食材として利用されます。煮込み料理やスープ、火鍋の具として人気です。栄養価が高く、薬膳料理としても重宝されています。</dd>
+                </dl>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Wd0bahBgSm4?si=MKlZuJDdxDDbmuHx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            </section>
+    
+            <section>
+                <h2 id="topic4">④まとめ</h2>
+    
+                <p>
+                    中国はその広大な土地と多様な文化が反映された観光地と食文化を持つ国です。観光面では、万里の長城や兵馬俑、外灘（バンド）といった歴史的な名所が数多く存在し、世界遺産や近代的な都市の美しい景色を楽しめます。また、グレートウォールや上海タワーなど、都市景観と歴史的な遺産が融合した場所が観光客に人気です。食文化において、中国は非常に多様性に富み、地域ごとに特色ある料理が楽しめます。例えば、四川の辛くてしびれる料理、広東のあっさりとした味わい、江蘇の甘い味付けなどがあります。ユニークな食材としては、カエルや蚕のさなぎ、蛇肉などがあり、それらは健康食や薬膳料理として親しまれています。皮蛋（ピータン）や臭豆腐など、発酵食品や独特な風味を持つ料理も日常的に食べられています。全体として、中国の観光地は歴史的、自然的な魅力が豊富で、食文化は地域ごとの特色が際立っています。食べ物は観光と同じように地域性が強く、それぞれの土地でしか味わえない特別な料理を楽しめる点が、中国旅行の魅力の一つと言えるでしょう。
+                </p>
+    
+                <a href="../index.html">フィリピンを紹介します！</a>
+            </section>
+    
+        </main>
+    
+        <footer>
+            Copyright &copy; Shohei, All Rights Reserved.
+        </footer>
+    </div>
+</body>
+
+ <!-- 外部のライブラリーは先に読み込む必要がある-->
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+ <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.min.js"></script>
+
+ <!-- 外部のJavaScriptを読み込む場合 -->
+ <script src="../js/c.query.js"></script>
+ <script src="../js/c.chart.js"></script>
+
+</html>
+
+<!-- コメント -->
+<!-- コメント -->
+<!-- シフトキー＋タブで揃える -->
+<!-- シフト＋オプション＋ｆで整える -->
+<!-- コマンド＋ｚで戻す -->
+<!-- コマンド＋シフト＋ｚで先へ進める -->
+<!-- コマンド＋スラッシュでコメント -->
+<!-- コマンド＋Sで保存 -->
+<!-- シフト＋オプション＋したで複製 -->

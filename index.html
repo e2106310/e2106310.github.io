@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Shohei">
+    <meta name="keywords" content="html, css, javascript">
+
+    <title>国紹介(フィリピン)</title>
+
+    <link rel="stylesheet" href="./css/a.css">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <h1>
+                フィリピンを紹介します！
+            </h1>
+            <nav class="gnav">
+                <ul>
+                    <li>
+                        <a href="../kadai-final/html/b.html">オーストラリア</a>
+                    </li>
+                    <li>
+                        <a href="../kadai-final/html/c.html">中国</a>
+                    </li>
+                 </ul> 
+            </nav>
+        </header>
+
+        <aside>
+            <h2>目次</h2>
+            <nav>
+                <ol>
+                    <li>
+                        <a href="#topic1">フィリピン</a>
+                    </li>
+                    <li>
+                        <a href="#topic2">セブ島観光地</a>
+                    </li>
+                    <li>
+                        <a href="#topic3">セブ島食文化</a>
+                    </li>
+                    <li>
+                        <a href="#topic4">まとめ</a>
+                    </li>
+                </ol>
+            </nav>
+
+            <section class="form-section">
+                <h2>申込フォーム</h2>
+
+                <form action="index.html" method="post">
+
+                    <div>
+                        <label for="lastname">姓：</label>
+                        <input type="text" id="lastname" name="surname" placeholder="山田" value="">
+                        <label>
+                            名：
+                            <input type="text" id="firstname" name="firstname" placeholder="太郎" value="" required>
+                        </label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">女性</label>
+
+                        <input type="radio" id="male" name="gender" value="male" checked>
+                        <label for="male">男性</label>
+
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">その他</label>
+                    </div>
+
+                    <div>
+                        <label for="birthday">誕生日：</label>
+                        <input type="date" name="birthday" id="birthday">
+                    </div>
+
+                    <div>
+                        <label for="tel">電話番号：</label>
+                        <input type="tel" id="tel" name="tel">
+                    </div>
+
+                    <div>
+                        <label for="email">メールアドレス：</label>
+                        <input type="email" id="email" name="email" value="email">
+                    </div>
+
+                    <div>
+                        <label for="password">パスワード：</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+
+                    <div>
+                        <label for="remakes">お問い合わせ内容：</label>
+                        <textarea name="remakes" id="remakes" cols="20" rows="5" accesskey="m" tabindex="1">ご質問やご要望を入力してください。</textarea>
+                    </div>
+
+                    <div>
+                        <label for="file">アップロードファイル：</label>
+                        <input type="file" id="file" name="file">
+                    </div>
+
+                    <div>
+                        <label for="agreement">プライバシーポリシーに同意する</label>
+                        <input type="checkbox" id="agreement" name="agreement" value="true">
+                    </div>
+
+                    <div>
+                        <input type="submit">
+                        <input type="reset">
+                    </div>
+                </form>
+            </section>
+
+            <section>
+                <h2>自己紹介</h2>
+                <div>
+                    <section>
+                        <h3>アッシー</h3>
+                        <div>
+                            <p id="test-p-1">大阪出身</p>
+                            <p class="test-p-2">八王子在住</p>
+                            <p id="test-p-3">旅好き</p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h3>メソッド</h3>
+                         <div>
+                            <button type="button" onclick="toggle()">表示・非表示</button>
+                            <button type="button" onclick="slide()">スライド</button>
+                            <button type="button" onclick="fade()">フェード</button>
+                            <button type="button" onclick="color()">CSS操作</button>
+                            <button type="button" onclick="costomAnimate()">カスタムアニメーション</button>
+                         </div>
+                    </section>
+
+                    <section>
+                        <h3>イベントハンドラ</h3>
+                        <div>
+                           <form action="">
+                            <input id="input-1" type="text">
+                           </form>
+                        </div>
+                    </section>
+                    
+                </div>
+            </section>
+
+            <section>
+                <h2>私のおすすめ地域</h2>
+
+                <section>
+                    <h3>棒グラフ</h3>
+                    <canvas id="myChart1"></canvas>
+                </section>
+
+                <section>
+                    <h3>ドーナツグラフ</h3>
+                    <canvas id="myChart2"></canvas>
+                </section>
+            
+            </section>
+
+        </aside>
+
+        <main>
+
+            <section>
+                <h2 id="topic1">①フィリピン</h2>
+                <div>
+                    <h3>フィリピンとは</h3>
+
+                    <div class="image-row-wrapper">
+                        <div class="image-row">
+                            <img src="../kadai-final/img/a.img/a-img/スクリーンショット 2025-07-25 午後3.44.07.png" alt="フィリピンの風景" width="400" height="300">
+                            <img src="../kadai-final/img/a.img/a-img/スクリーンショット 2025-07-25 午後3.44.12.png" alt="フィリピンの風景" width="400" height="300">
+                            <img src="../kadai-final/img/a.img/a-img/スクリーンショット 2025-07-25 午後3.44.18.png" alt="フィリピンの風景" width="400" height="300">
+                        </div>
+                    </div>
+
+
+                    <p>フィリピン共和国（フィリピンきょうわこく、フィリピン語/タガログ語: Republika ng Pilipinas、英: Republic of the Philippines、スペイン語:
+                        República de Filipinas
+                        通称フィリピンは、東南アジアに位置する立憲共和制国家。7641の島々がある島国であり、そのうち有人島に暮らす総人口は1億人を超える。首都はルソン島にあるマニラ市またはマニラ首都圏。
+                    </p>
+
+                    <p>
+                        <a href="https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A3%E3%83%AA%E3%83%94%E3%83%B3"
+                            target="_self">詳しく知りたい方はこちらをクリック（wikipedia）</a>
+                    </p>
+                </div>
+
+                <div>
+                    <h3>フィリピンの基本情報</h3>
+                    <table>
+                        <caption></caption>
+                        <tbody>
+                            <tr>
+                                <th>人口</th>
+                                <td colspan="3">114,189,499人（2022年時点）</td>
+                            </tr>
+                            <tr>
+                                <th>国土面積</th>
+                                <td colspan="3">298,170平方キロメートル</td>
+                            </tr>
+                            <tr>
+                                <th>言語</th>
+                                <td colspan="3">フィリピン語、英語</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div>
+                    <h3>主な都市</h3>
+                    <dl>
+                        <dt>マニラ</dt>
+                        <dd>ルソン島にあるフィリピンの首都です。人口密度の高い港湾都市として栄え、街にはスペイン植民地時代の建築物とモダンな超高層ビルが混在しています。</dd>
+                        <dt>セブ</dt>
+                        <dd>リゾート地として人気があります。特に、マクタン島にはリゾートホテルが多く、美しいビーチで過ごすことができます。セブ島自体も、マゼラン十字架などの歴史的建造物や、美しい自然、アクティビティなど、様々な楽しみ方ができます。
+                        </dd>
+                    </dl>
+                </div>
+
+            </section>
+
+            <section>
+                <h2 id="topic2">②セブ島観光地</h2>
+
+                <dl>
+                    <dt>オスロブ</dt>
+                    <dd>ルソン島にあるフィリピンの首都です。人口密度の高い港湾都市として栄え、街にはスペイン植民地時代の建築物とモダンな超高層ビルが混在しています。</dd>
+                    <dt>ITパーク</dt>
+                    <dd>リゾート地として人気があります。特に、マクタン島にはリゾートホテルが多く、美しいビーチで過ごすことができます。セブ島自体も、マゼラン十字架などの歴史的建造物や、美しい自然、アクティビティなど、様々な楽しみ方ができます。
+                    </dd>
+                    <dt>TOPs</dt>
+                    <dd>リゾート地として人気があります。特に、マクタン島にはリゾートホテルが多く、美しいビーチで過ごすことができます。セブ島自体も、マゼラン十字架などの歴史的建造物や、美しい自然、アクティビティなど、様々な楽しみ方ができます。
+                    </dd>
+                </dl>
+
+                <div class="media-row-wrapper">
+                    <div class="media-row">
+                        <img src="../kadai-final/img/a.img/a-img/スクリーンショット 2025-07-25 午後3.44.35.png" alt="フィリピンの風景" width="400" height="300">
+                        <img src="../kadai-final/img/a.img/a-img/スクリーンショット 2025-07-25 午後3.44.47.png" alt="フィリピンの風景" width="400" height="300">
+                        <img src="../kadai-final/img/a.img/a-img/スクリーンショット 2025-07-25 午後3.46.21.png" alt="フィリピンの風景" width="400" height="300">
+                    </div>
+                </div>
+
+            </section>
+
+            <section>
+                <h2 id="topic3">
+                    ③セブ島食文化
+                </h2>
+
+                <dl>
+                    <dt>バロット</dt>
+                    <dd>ルソン島にあるフィリピンの首都です。人口密度の高い港湾都市として栄え、街にはスペイン植民地時代の建築物とモダンな超高層ビルが混在しています。</dd>
+                    <dt>レチョン</dt>
+                    <dd>リゾート地として人気があります。特に、マクタン島にはリゾートホテルが多く、美しいビーチで過ごすことができます。セブ島自体も、マゼラン十字架などの歴史的建造物や、美しい自然、アクティビティなど、様々な楽しみ方ができます。
+                    </dd>
+                    <dt>トゥスルブワ</dt>
+                    <dd>リゾート地として人気があります。特に、マクタン島にはリゾートホテルが多く、美しいビーチで過ごすことができます。セブ島自体も、マゼラン十字架などの歴史的建造物や、美しい自然、アクティビティなど、様々な楽しみ方ができます。
+                    </dd>
+                </dl>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Wd0bahBgSm4?si=MKlZuJDdxDDbmuHx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </section>
+
+            <section>
+                <h2 id="topic4">④まとめ</h2>
+
+                <p>
+                    フィリピンは日本と比べるとまだまだ危険な場所もありますが、とてもフレンドリーで観光地や独自の食文化もあるので是非行ってみてください。次のページではオーストラリアを紹介します。
+                </p>
+
+                <a href="../kadai-final/html/b.html">オーストラリアを紹介します！</a>
+            </section>
+
+        </main>
+
+        <footer>
+            Copyright &copy; Shohei, All Rights Reserved.
+        </footer>
+
+    </div>
+</body>
+
+ <!-- 外部のライブラリーは先に読み込む必要がある-->
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+ <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.min.js"></script>
+
+ <!-- 外部のJavaScriptを読み込む場合 -->
+ <script src="../kadai-final/js/a.query.js"></script>
+ <script src="../kadai-final/js/a.chart.js"></script>
+
+ <!-- javascriptはbodyの閉じタグの直前に記述するのがセオリー -->
+
+</html>
+
+<!-- コメント -->
+<!-- コメント -->
+<!-- シフトキー＋タブで揃える -->
+<!-- シフト＋オプション＋ｆで整える -->
+<!-- コマンド＋ｚで戻す -->
+<!-- コマンド＋シフト＋ｚで先へ進める -->
+<!-- コマンド＋スラッシュでコメント -->
+<!-- コマンド＋Sで保存 -->
+<!-- シフト＋オプション＋したで複製 -->

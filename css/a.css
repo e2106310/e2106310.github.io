@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+header{
+    background-color: #faa;
+    grid-area: header-A;
+}
+
+aside{
+    background-color: #fffaa4;
+    grid-area: aside-A;
+}
+
+footer{
+    background-color: #aaf;
+    grid-area:footer-A;
+}
+
+main{
+    background-color: #afa;
+    grid-area: main-A;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+    grid-template-areas: 
+            "header-A header-A"
+            "aside-A main-A"
+            "footer-A footer-A";
+
+    column-gap: 1em;
+    row-gap: 1em;
+}
+
+/* table{
+    margin: 0px 0px 0px 24px;
+    padding:24px 24px;
+    border: 2px solid red;
+} */
+
+tr, th, td {
+    border: solid; 
+}
+
+.gnav >ul{
+    list-style: none;
+}
+
+.gnav > ul > li {
+    display: inline;
+    margin: 0 8px 0 0;
+    border:1px solid #000;
+    border-radius: 4px;
+    padding: 8px 4px;
+    background: linear-gradient(#FFF, #999999);
+}
+
+input[type="button"]{
+    margin: 4px;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #0088ff, #bbddff);
+
+}
+
+/* --------------------------------------------------------- */
+
+
+.image-row-wrapper {
+    padding: 0 5%; 
+    box-sizing: border-box;
+  }
+  
+  .image-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;         
+    margin-bottom: 24px;
+  }
+  
+  .image-row img {
+    width: 30%;
+    height: auto;     
+    display: block;
+  }
+  
+  .media-row-wrapper {
+    padding: 0 5%;
+    box-sizing: border-box;
+  }
+  
+  .media-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .media-row img,
+  .media-row video {
+    width: 30%;
+    height: auto;
+    display: block;
+  }
+
+  .video-container {
+    text-align: center; 
+  }
+  
+  .centered-video {
+    display: inline-block; 
+    border: none;
+  }
+  
+  .audio-container {
+    text-align: center;
+  }
+
+  /* table {
+    margin-left: auto;
+    margin-right: auto;
+  } */
+
+  .form-section {
+    margin-top: 50%;
+  }
+
+  .form-section {
+    width: 90%;           
+    max-width: 600px; 
+    margin: 0 auto; 
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+ .form-section {
+    width: 60%;         
+    margin: 0 auto; 
+    padding: 20px;
+    text-align: center; 
+}
+
+.form-section form > div {
+    margin-bottom: 10px;
+    text-align: left;
+} 
+  
